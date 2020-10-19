@@ -9,6 +9,7 @@ export default {
   // 设置文件夹别名
   alias: {
     '/@/': resolve('./src'),
-    '/@views/': resolve('./src/views')
+    '/@views/': resolve('./src/views'),
+    '/@comp/': resolve('./src/components')
   }
 }
