@@ -2,12 +2,13 @@
 // @ts-ignore
 import path from 'path'
 
-console.log(path.resolve(__dirname, './src'))
+const resolve = (pathName) => path.resolve(__dirname, pathName)
 
 export default {
   base: './',
   // 设置文件夹别名
   alias: {
-    '/@/': path.resolve(__dirname, './src')
+    '/@/': resolve('./src'),
+    '/@views/': resolve('./src/views')
   }
 }
