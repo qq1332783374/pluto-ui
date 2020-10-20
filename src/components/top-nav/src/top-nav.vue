@@ -35,7 +35,7 @@
       }
     },
     setup (props, ctx) {
-      const isListVisible = ref(true)
+      const isListVisible = ref(false)
 
       const handleClickList = () => {
         isListVisible.value = !isListVisible.value
