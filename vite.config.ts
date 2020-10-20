@@ -1,6 +1,5 @@
 // vite配置，类似 vue.config.js
-// @ts-ignore
-import path from 'path'
+import * as path from 'path'
 
 const resolve = (pathName) => path.resolve(__dirname, pathName)
 
