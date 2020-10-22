@@ -1,13 +1,17 @@
 @import "../common/var";
-@import "./function";
+@import "function";
 
 /* BEM
 --------------- */
-@mixin b ($block) {
+@mixin b($block) {
   $B: $namespace+'-'+$block !global;
+
+  .#{$B} {
+    @content;
+  }
 }
 
-@mixin e ($element) {
+@mixin e($element) {
   $E: $element !global;
   $selector: &;
   $currentSelector: "";
