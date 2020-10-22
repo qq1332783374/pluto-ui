@@ -57,6 +57,7 @@
     padding: 10px 60px;
     position: relative;
     z-index: 20;
+    box-shadow: 0 0 1px rgba(0,0,0,0.25);
 
     ul,
     li {
@@ -106,12 +107,11 @@
 
     &__list {
       position: absolute;
-      height: 100%;
       right: 60px;
       top: 10px;
       bottom: 10px;
-      line-height: 40px;
       display: flex;
+      align-items: center;
       flex-direction: row;
 
       li {
@@ -125,11 +125,6 @@
         a:visited {
           color: #304455;
           cursor: pointer;
-        }
-
-        a.router-link-active,
-        a.router-link-exact-active {
-          color: #2b99ff;
         }
       }
     }

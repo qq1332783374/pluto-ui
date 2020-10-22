@@ -3,10 +3,27 @@
     <top-nav list-visible @handleClickList="handleClickList" />
     <main class="doc__main">
       <aside class="doc__side" ref="oAside">
-        左侧导航栏
+        <h3>文档</h3>
+        <ol>
+          <li>
+            <router-link to="/doc/intro">介绍</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/install">安装</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/get-started">开始使用</router-link>
+          </li>
+        </ol>
+        <h3>组件</h3>
+        <ol>
+          <li>
+            <router-link to="/doc/button">按钮</router-link>
+          </li>
+        </ol>
       </aside>
       <div class="doc__content">
-        右边内容
+        <router-view />
       </div>
     </main>
   </div>
@@ -59,6 +76,14 @@
       width: 200px;
       margin-left: 0;
       transition: margin-left 0.2s;
+      box-shadow: 0 0 1px rgba(0,0,0,0.25);
+      line-height: 1.8;
+
+      ol,
+      li {
+        list-style: none;
+      }
+
     }
 
     &__content {

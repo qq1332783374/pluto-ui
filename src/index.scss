@@ -15,3 +15,14 @@ body {
   background-color: #fff;
   margin: 0;
 }
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #304455;
+}
+
+a.router-link-active,
+a.router-link-exact-active {
+  color: #2b99ff;
+}
